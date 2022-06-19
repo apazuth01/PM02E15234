@@ -9,7 +9,7 @@
                    CornerRadius="0">
                 
                 <Label Text="Agregar Sitios Visitados"
-                       TextColor="White"
+                       TextColor="Black"
                        FontSize="24"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

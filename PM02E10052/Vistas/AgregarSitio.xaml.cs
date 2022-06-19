@@ -60,8 +60,7 @@ namespace PM02E10052.Vistas
                 tomarfoto.Dispose();
                 imagenByte = stream.ToArray();
 
-                base64Val = Convert.ToBase64String(imagenByte);
-                //await EmpleController.SubirImagen(imagenByte);
+                base64Val = Convert.ToBase64String(imagenByte);              
             }
 
 
@@ -75,7 +74,7 @@ namespace PM02E10052.Vistas
 
                 if (location == null)
                 {
-                    await DisplayAlert("Error", "GPS no esta activo", "Ok");
+                    await DisplayAlert("Error", "GPS no esta activado", "Ok");
                     lbllatitud.Text = "00.0";
                     lbllongitud.Text = "00.0";
                 }
@@ -113,7 +112,7 @@ namespace PM02E10052.Vistas
 
             if (resultado == 1)
             {
-                await DisplayAlert("Mensaje", "Registro exitoso!!!", "ok");
+                await DisplayAlert("Exito", "Ubicacion Registrada Exitosamente!", "ok");
                 clear();
                 Datos_Ubicacion();
             }
@@ -136,13 +135,13 @@ namespace PM02E10052.Vistas
 
                 if (location == null)
                 {
-                    await DisplayAlert("Error", "GPS no esta activo", "Ok");
+                    await DisplayAlert("Error", "GPS no esta activado", "Ok");
                 }
                 else
                 {
                     if (String.IsNullOrWhiteSpace(describir.Text) == true)
                     {
-                        await DisplayAlert("Error", "Debe describir la direccion del sitio", "Ok");
+                        await DisplayAlert("Error", "Escriba la direccion del sitio", "Ok");
                     }
                     else
                     {
