@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02E10052.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkGreen" 
+               Padding="24" 
+               CornerRadius="0">
+            <Label Text="Examen I Parcial Agustin Paz, Manfredi Guardado" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="20"/>
+        </Frame>
+
+        <Image Source="logo.png" 
+                   x:Name="imagen" 
+                   HorizontalOptions="Center" 
+                   HeightRequest="180" 
+                   WidthRequest="250"
+               Margin="20,10,20,0"/>
+
+        <Button Text="Abrir Aplicacion" 
+                x:Name="btn_abrir" 
+                Clicked="btn_abrir_Clicked"
+                Margin="30,0,30,0"
+                TextTransform="None"
+                BackgroundColor="DarkGreen"
+                TextColor="White"
+                CornerRadius="7"
+                FontSize="16"
+                VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
+
+</ContentPage>
